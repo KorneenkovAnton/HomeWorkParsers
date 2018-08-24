@@ -4,7 +4,7 @@
     <personal-info>
         <name>Ben</name>
         <sname>Green</sname>
-        <date-of-birth>17-12-1997</date-of-birth>
+        <date-of-birth>1997-12-17</date-of-birth>
     </personal-info>
     <position>Programmer</position>
     <salary>123456</salary>
@@ -15,7 +15,7 @@
     <personal-info>
         <name>Bob</name>
         <sname>Johns</sname>
-        <date-of-birth>17-12-1990</date-of-birth>
+        <date-of-birth>1990-09-28</date-of-birth>
     </personal-info>
     <position>Doctor</position>
     <salary>12341236</salary>

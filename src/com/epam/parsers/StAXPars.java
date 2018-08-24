@@ -58,7 +58,7 @@ public class StAXPars implements Tags {
                             break;
                         }
                         case DATEOFB_TAG: {
-                            format.applyPattern("dd-MM-yyyy");
+                            format.applyPattern("yyyy-MM-dd");
                             try {
                                 currentEmpl.getPersonalInfo().setDateOfBirth(format.parse(content));
                             } catch (ParseException e) {

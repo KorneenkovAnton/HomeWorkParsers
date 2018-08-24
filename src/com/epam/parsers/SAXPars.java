@@ -66,7 +66,7 @@ public class SAXPars extends DefaultHandler implements Tags {
                 break;
             }
             case DATEOFB_TAG:{
-                format.applyPattern("dd-MM-yyyy");
+                format.applyPattern("yyyy-MM-dd");
                 try {
                     currentEmployee.getPersonalInfo().setDateOfBirth(format.parse(text));
                 } catch (ParseException e) {

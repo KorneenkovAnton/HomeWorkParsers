@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="employee-list">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="employee" type="EmployeeType" minOccurs="1" maxOccurs="unbounded"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="PersonalInfoType">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string" nillable="false"/>
+            <xs:element name="sname" type="xs:string" nillable="false"/>
+            <xs:element name = "date-of-birth" type="xs:date" nillable="false"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="EmployeeType">
+        <xs:sequence>
+            <xs:element name="personal-info" type="PersonalInfoType"/>
+            <xs:element name="position" type="xs:string" nillable ="false"/>
+            <xs:element name="salary" type="xs:int" nillable ="false"/>
+            <xs:element name="experience" type="xs:int" nillable="false"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:positiveInteger"/>
+    </xs:complexType>
+</xs:schema>
